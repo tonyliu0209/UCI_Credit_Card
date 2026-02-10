@@ -63,7 +63,7 @@ with col_predict1:
         model_mapping = {
             "KNN": "model_KNN.joblib",
             "LogisticRegression": "model_LogisticRegression.joblib",
-            "隨機森林": "model_RandomForest.joblib",
+            # "隨機森林": "model_RandomForest.joblib",
             "XGBoost": "model_XGBoost.joblib"
         }
         
@@ -101,3 +101,4 @@ if hasattr(st.session_state, 'prediction'):
         # 顯示抽選的資料樣本
         with st.expander("📊 檢視抽選的資料樣本"):
             st.write(st.session_state.random_sample)
+
